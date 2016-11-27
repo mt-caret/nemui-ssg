@@ -1,0 +1,31 @@
+# blog config
+blog_title: mt_caret.log
+base_url: 'https://mt-caret.github.io/'
+relative_root: '/blog/'
+description: ''
+
+# page config
+default_language: en
+default_title: mt_caret.log
+date_format: 'YYYY-MM-DD'
+
+# author config
+author: mt_caret
+bio: 'A student at Keio University. <a target="_blank" href="https://twitter.com/mt_caret_en">@mt_caret</a> / <a target="_blank" href="https://twitter.com/mt_caret_en">@mt_caret_en</a>'
+
+# RSS config
+rss_limit: 20
+
+# template config
+templates:
+  post:
+    document_type: '[placeholder]'
+    language: ja
+    title: Title
+    date: '[placeholder]'
+    categories:
+      - category
+    tags:
+      - tag
+    math: false
+

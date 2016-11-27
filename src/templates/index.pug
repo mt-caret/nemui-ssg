@@ -1,0 +1,14 @@
+extends layout/base.pug
+
+block content
+  ul#index
+    each post in post_list
+      -
+        const { attributes: metadata, body } = post.data(),
+          { path: relative_path, moment } = post,
+          path = path_join(config.relative_root, relative_path);
+      li.entry
+        a(href=path)
+          small.date= metadata.date
+          = metadata.title
+

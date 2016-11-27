@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body {
+  font-family: 'Noto Sans Japanese', sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
+  background-image: url("../img/cheap_diagonal_fabric.png");
+}
+
+header#header > a {
+  color: black;
+}
+
+header#header > * {
+  padding: 0px 5px 0px 5px;
+}
+
+header#header {
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+footer#footer {
+  text-align: center;
+  padding-top: 4px;
+  border-top: 1px solid rgba(0, 0, 0, .2);
+}
+
+ul#index {
+  list-style-type: none;
+}
+
+li.entry {
+  line-height: 24px;
+}
+
+li.entry > a {
+  color: black;
+}
+
+small.date {
+  padding-right: 5px;
+}
+
+section.content {
+  margin: 10px;
+}
+
+code {
+  background-color: #fff;
+  padding: 4px;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
+}
+
+pre {
+  background-color: #fff;
+  padding: 4px;
+  border: 1px solid #e1e1e8;
+  border-radius: 4px;
+}
+
+pre > code {
+  padding: 0px;
+  border: 0px;
+  border-radius: 0px;
+
+}
+
+blockquote {
+  padding: 10px;
+  background-color: #fefefe;
+  border: 3px solid #e3e3e3;
+  border-radius: 10px;
+}

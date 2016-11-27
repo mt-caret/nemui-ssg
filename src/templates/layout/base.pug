@@ -1,0 +1,32 @@
+doctype html
+html(lang= metadata.language)
+  head
+    meta(charset="utf-8")
+    block title
+      title= config.default_title
+  body
+    header#header
+      - const rss_path = path_join(config.relative_root, '/atom.xml');
+      a(href=config.relative_root)= config.blog_title
+      a#about(href='#')= 'about'
+      span#about-text(style='display: none')!= config.bio
+      a#rss(href=rss_path)= 'RSS'
+    block content
+    footer#footer
+      small= config.author
+      br
+      a(rel="license", href="http://creativecommons.org/licenses/by/4.0/")
+        img(
+          alt="Creative Commons License",
+          style="border-width:0",
+          src="https://i.creativecommons.org/l/by/4.0/80x15.png"
+        )
+    if metadata.math
+      script(src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML')
+      script(type="text/x-mathjax-config").
+        MathJax.Hub.Config({
+          showProcessingMessages: false,
+          tex2jax: { inlineMath: [['$','$']] },
+          TeX: { equationNumbers: {autoNumber: "AMS"} },
+        });
+

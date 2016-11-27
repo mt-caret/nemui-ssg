@@ -1,0 +1,12 @@
+extends layout/base.pug
+
+block title
+  title= metadata.title + ' - ' + config.blog_title
+
+block content
+  article
+    h1
+      small.date= metadata.date
+      = metadata.title
+    section.content!= content
+

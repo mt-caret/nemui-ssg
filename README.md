@@ -8,11 +8,11 @@ DEAD
 
 # TODO
 
-- [] split config in two (dev/prod version) -> only generate favicons?
+- [ ] split config in two (dev/prod version) -> only generate favicons?
 - [x] RSS limit via config.yaml?
-- [] gh-pages deploy with script
-- [] fix highlighting -> investigate
-- [] pagination?
+- [ ] gh-pages deploy with script
+- [ ] fix highlighting -> investigate
+- [ ] pagination?
 - [x] new post creation script w/ template
-- [] tidy everything up for github
+- [ ] tidy everything up for github
 
